@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <input type="text" placeholder="add task" class="input"/>
+    <button onclick="Addtask()">Add</button>
+    <ul id="tasas"></ul>
+    <script>
+        let sss=document.getElementById('tasas');
+       let d=document.getElementsByClassName('.input');
+       let ss=d.value;
+        function Addtask(ss){
+               let ww=document.createElement('li');
+               ww.textContent=ss;
+               sss.appendChild(ww);
+               d.value=''
+        
+    
+        }
+    </script>
+</body>
+</html>
